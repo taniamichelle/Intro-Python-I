@@ -14,10 +14,10 @@ print(f1(1, 2))
 # sum. Google for "python arbitrary arguments" and look for "*args"
 
 # YOUR CODE HERE
-def f2(*args):
+def f2(*nums):
     result = 0
-    for z in args:
-        result += z
+    for num in nums:
+        result += num
     return result
 
 print(f2(1))                    # Should print 1
@@ -35,11 +35,11 @@ print(f2(*a))    # Should print 22
 # arguments. Google "python default arguments" for a hint.
 
 # YOUR CODE HERE
-def f3(*args):
-    result = 0
-    for arg in args:
-        result += arg
-    return result
+def f3(arg1, arg2 = 0):
+    if(arg1 and arg2):
+        arg1 + arg2
+    else:
+        return arg1 + 1
 
 print(f3(1, 2))  # Should print 3
 print(f3(8))     # Should print 9
@@ -56,7 +56,7 @@ print(f3(8))     # Should print 9
 # YOUR CODE HERE
 def f4(**kwargs):
     for key, value in kwargs.items():
-        print("key: {}, value: {}".format(key, value))
+        print(f "key: {}, value: {}")
 
 # Should print
 # key: a, value: 12

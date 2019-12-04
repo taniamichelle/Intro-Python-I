@@ -23,5 +23,12 @@ import sys
 import calendar
 from datetime import datetime
 
-def calendar(month, year):
-  print(month, year)
+def calendar():
+  print('[month: int], [year: int]')
+
+print("calendar of December 2019 is: ")
+print(calendar.month(2019, 12))
+
+# c = calendar.TextCalendar(calendar.SUNDAY)
+# str = c.formatmonth(2020, 1)
+# print(str)

@@ -2,11 +2,10 @@
 
 # YOUR CODE HERE
 def is_even(num):
-    for num in num:
-        if num %2 == 0:
-            return True
-        else:
-            return False
+    if num %2 == 0:
+        return True
+    else:
+        return False
 # Read a number from the keyboard
 num = input("Enter a number: ")
 num = int(num)
@@ -14,9 +13,11 @@ num = int(num)
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
 # YOUR CODE HERE
-def is_even(num):
-    for num in num:
-        if num %2 == 0:
-            print("Even!")
-        else:
-            print("Odd")
+if is_even(num) == True:
+    print("Even!")
+else:
+    print("Odd")
+'''
+Alternate option below
+'''    
+# print('Even!' if is_even(num) else 'Odd')
