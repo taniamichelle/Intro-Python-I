@@ -22,3 +22,6 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+def calendar(month, year):
+  print(month, year)
